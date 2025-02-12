@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: rgb(101, 0, 0);
+}
+
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+video {
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.content {
+    position: relative;
+    text-align: left;
+    padding: 20px;
+    z-index: 1;
+    max-width: 800px; /* Limit the width of the text area */
+    margin: auto; /* Center the content */
+}
+
+h1 {
+    font-size: 3em; /* Increase the size of the header */
+    margin-bottom: 20px;
+    text-align: center; /* Center the title */
+}
+
+.summary {
+    font-size: 1.5em; /* Adjust the font size for the summary */
+    margin-bottom: 20px; /* Space below the summary */
+    text-align: center; /* Center the summary text */
+    line-height: 1.5; /* Improve readability */
+}
+
+.text-image-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px; /* Space between image-text containers */
+}
+
+.side-image {
+    max-width: 45%; /* Limit the image width */
+    margin: 0 10px; /* Space around images */
+}
+
+.text-image-container p {
+    flex: 1; /* Allow the paragraph to take the remaining space */
+    font-size: 1em; /* Default font size for mobile */
+    line-height: 1.4; /* Improve readability */
+}
+
+/* Media Query for Larger Screens */
+@media (min-width: 768px) {
+    .text-image-container p {
+        font-size: 1.2em; /* Increase font size for larger screens */
+    }
+
+    .summary {
+        font-size: 1.8em; /* Increase summary font size for larger screens */
+    }
+}
