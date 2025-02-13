@@ -37,7 +37,7 @@ h1 {
 }
 
 .summary {
-    font-size: 1.5em; /* Adjust the font size for the summary */
+    font-size: 1.2em; /* Adjust the font size for the summary */
     margin-bottom: 20px; /* Space below the summary */
     text-align: center; /* Center the summary text */
     line-height: 1.5; /* Improve readability */
@@ -47,6 +47,9 @@ h1 {
     display: flex;
     align-items: center;
     margin-bottom: 20px; /* Space between image-text containers */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add shadow for lift effect */
+    border-radius: 10px; /* Optional: Add rounded corners */
+    padding: 10px; /* Optional: Add some padding */
 }
 
 .side-image {
@@ -56,7 +59,7 @@ h1 {
 
 .text-image-container p {
     flex: 1; /* Allow the paragraph to take the remaining space */
-    font-size: 1em; /* Default font size for mobile */
+    font-size: 0.6em; /* Default font size for mobile */
     line-height: 1.4; /* Improve readability */
 }
 
@@ -69,4 +72,21 @@ h1 {
     .summary {
         font-size: 1.8em; /* Increase summary font size for larger screens */
     }
+}
+.poem-container {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.poem-container h2 {
+    text-align: center;
+    color: #ff69b4; /* Hot pink color for the heading */
+}
+
+.poem-container p {
+    font-size: 15px;
+    line-height: 1.6;
+    margin: 10px 0;
 }
